@@ -16,3 +16,13 @@ These are the steps.
         WARNING: 'glyphicons-halflings-white.png' was not found (or cannot be read) in /tmp/5425451/app/images
 
 3. Add `app/images/glyphicons-halflings-white.png` and `app/images/glyphicons-halflings.png`
+
+4. grunt
+
+    Generated CSS, `dist/styles/7079bc05.main.css` includes `app` in the background image URL.
+
+        background-image:url(../../app/images/glyphicons-halflings.png?1366453617);
+        background-image:url(../../app/images/glyphicons-halflings-white.png?1366453617);
+
+    Same is observed when running on `grunt server`.
+
